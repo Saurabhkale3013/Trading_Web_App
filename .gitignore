@@ -1,6 +1,15 @@
+# node_modules/
+# .env
+# build/
+# dist/
+# .DS_Store
+# *.log
+# Node
 node_modules/
 .env
-build/
-dist/
-.DS_Store
+
+# React build
+frontend/build/
+
+# Logs
 *.log
