@@ -274,6 +274,17 @@ app.get("/allHoldings", async (req, res) => {
   }
 });
 
+
+const path = require("path");
+
+// Serve React static files
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+});
+
+
 // GET all positions
 app.get("/allPositions", async (req, res) => {
   try {

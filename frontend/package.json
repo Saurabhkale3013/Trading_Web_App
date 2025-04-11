@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "server": "cd backend && npm start",
     "client": "cd frontend && npm start",
     "dashboard": "cd dashboard && npm start",
